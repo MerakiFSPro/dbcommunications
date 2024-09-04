@@ -1,26 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
     <title>DB Communications</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" type="text/css" /> 
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />   
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
 </head>
+
 <body>
-    <div>
-        <h1>Hello</h1>
-        <p>tester</p>
+    <div id="outer">
+        <header class="header order-last" id="tm-header">
+            <nav class="navbar">
+                <div class="collapse navbar-collapse single-page-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-1"><span class="icn"><i class="fab fa-2x fa-usb"></i></span> Our Company</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-2"><span class="icn"><i class="fab fa-2x fa-battle-net"></i></span> Our Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-3"><span class="icn"><i class="far fa-2x fa-images"></i></span> Fortune 500</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-4"><span class="icn"><i class="far fa-2x fa-comments"></i></span> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <button class="navbar-button collapsed" type="button">
+            <span class="menu_icon">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+        </button>
+        
+        <main id="content-box" class="order-first">
+            <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/data-center-structured-cabling.jpg" id="section-1">
+                <div class="container">
+                    <div class="item">
+                        <div class="bg-blue-transparent logo-fa"><span><svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404 512"><path d="M64.6 214.8l0 104.4 45-.2 45-.2 5.8-1.4c44.8-10.6 72.2-50.8 72.1-105.8c0-47.6-21.9-83.4-58.6-96.2c-13.9-4.8-16.5-5-66.7-5l-42.7 0 0 104.4zm19.7-86.3c.4-.4 1.6-.6 3.3-.4c1.5 .1 11 .4 21.1 .6c38.1 .6 49.3 2.1 62 8.2c26.6 12.8 38.3 37 38.4 79.2c.1 39.5-10.9 62.6-36.2 76.5c-12.6 6.9-21.7 8.1-61.4 8.1l-27.9 0 0-85.8c0-67.6 .1-85.9 .7-86.4zm1.5 86.1l0 84.1 29.7-.2c32.8-.2 36.5-.5 46.4-3.7c30.9-9.8 46.6-38.5 45.3-82.3c-1.2-38.9-12.4-61.3-36.8-73.5c-12.3-6.1-32.5-8.3-79.1-8.4l-5.4 0 0 84.1zm20.6 .2l0-65.3 19.9 .2c18.1 .2 20.3 .3 24.2 1.3c26.4 6.9 38.6 28.3 37.6 65.6c-.8 32.9-11.5 52.6-32.6 60.3c-7.2 2.6-12.4 3.1-31.9 3.1l-17.3 0 0-65.3zm128.7 16c-.2 .8-.4 2.6-.6 4.1s-.4 3-.6 3.5c-.2 .7 .9 .9 9.1 1.1c23.2 .7 36.2 7.1 43.5 21.3c3.1 6.1 3.9 8.9 3.9 14.8c0 10.8-4.8 20.6-15 30.6c-5.3 5.2-6.6 7.7-6.6 12.7c0 6.6 2.6 10 13.4 17.2c16.6 11.2 19.6 15.2 20 27.1c.3 8.1-.6 12.7-3.8 19.1c-5.4 10.8-15.2 18.4-26.7 20.5l-3.4 .6-.1 6.4c-.2 7.5-.8 7 6.8 5.4c19.1-4 30.5-14.3 37.6-34.1c2.6-7.2 3.2-11.4 2.9-19c-.8-18.2-7.5-28.4-24.1-36.8c-11.2-5.6-11.9-10.4-3-20c19.5-20.9 18.2-51.3-3-66.3c-10.8-7.7-20.1-9.8-41.9-9.8l-8.1 0-.3 1.5zm-1.8 12.2c-.6 1.1-2.7 9.3-2.7 10.4c0 .6 .5 .6 2.5 .2c3.6-.8 16.8-.7 20.5 .1c20.1 4.3 27.5 26.8 13.1 40.2c-8.3 7.8-28.1 18-59.9 31c-28.1 11.4-45.2 27.8-56.8 54.3c-1.6 3.7-1.9 3.3 2.6 4c2 .3 5.1 1.2 6.8 1.9s3.2 1.2 3.2 1.2c.9-2.5 5.9-11.5 8.4-15.1c11-16.1 24.5-25.8 50.6-36.2c21.5-8.6 40.6-19.5 50.3-28.8c25.7-24.9 16-57.9-18.6-63.2c-7.5-1.1-19.4-1.1-20 .2zM218.4 378.4c-1.6 2.6-1.7 2.9-2.4 13.5c-.9 12.2-.9 11.9 1.3 12.7c3 1 4-1.9 4.8-13.4c.3-5.2 .7-10.5 .9-11.7c.3-2 .2-2.3-1.3-3l-1.6-.8-1.7 2.7zm6.8 1.5c-.2 1.4 .1 1.6 6 4.7l6.2 3.2 .2-1.5c.2-1.5 0-1.6-6-4.7l-6.2-3.2-.2 1.5zm-.4 5.3c0 1.5 .3 1.8 5.9 4.7c3.3 1.7 6.1 3.1 6.3 3.2s.4-.5 .4-1.4c0-1.5-.3-1.8-5.9-4.7c-3.3-1.7-6.1-3.1-6.3-3.2s-.4 .5-.4 1.4zm-81.3 .3c-.4 .5-.9 2-1.2 3.3s-1.3 4.1-2.3 6.1s-1.9 3.8-1.9 3.9s1.8 .3 4.1 .3c6.5 0 13.3 2.1 18 5.6l1.7 1.3 0-4.4c0-2.6 .3-5.2 .8-6.5c1.4-3.7 1.4-4.2 0-5.6c-3-3-17.5-6-19.3-3.9zm96.1 3.6c0 2.1-.2 6.8-.3 10.5l-.3 6.7 1.6 .8 1.6 .8 .3-3.8c.2-2.1 .4-6.9 .5-10.7l.2-6.9-1.4-.7c-2.1-1-2.2-.9-2.2 3.2zm4.6 5c-.2 3.7-.3 8.5-.3 10.8l0 4 2.5 1.1c1.4 .6 2.6 1 2.6 1s.3-2.8 .4-6.2s.4-8.2 .5-10.8l.3-4.8-2.5-.9c-1.4-.5-2.7-.9-2.8-.9s-.5 3-.7 6.7zm8.5-1.1c-.2 3.1-.3 9-.3 13.2l0 7.5 1.6 .6 1.6 .6 .1-11.5c.1-14.3 .1-14.5-1-15.3c-1.4-1.1-1.5-.8-1.9 5zm-27.9-2.4c-.2 1.6-.1 1.7 6 4.7c3.4 1.7 6.3 3.1 6.3 3c.8-2.6 .9-2.5-6.5-6.4l-5.6-3-.2 1.6zm33.4 6c0 3.6-.2 9.3-.3 12.8l-.3 6.3 1.7 .6 1.7 .6 0-8.1c0-4.4 .1-10.2 .3-12.8l.3-4.7-1.7-.6L258 390l0 6.5zm5.3 6c0 5.2-.1 10.8-.3 12.5c-.3 3.1-.3 3.1 1.3 3.7l1.6 .6 0-2.5c0-1.4 .2-6.9 .3-12.4c.3-9.3 .3-10-.7-10.7c-2.2-1.7-2.3-1.3-2.3 8.6zm-39.1-6.3c0 1.4 .5 1.8 6.1 4.8c7.1 3.8 6.6 3.6 6.6 1.7c0-1.5-.4-1.8-6.3-4.8l-6.3-3.2 0 1.5zm-86.1 5.3c-3.3 .8-5.9 4.2-6.4 8.1c0 .2 2.5 .4 5.7 .4c8.1 0 16 2.4 21.5 6.7c2.1 1.6 2 1.7 2.8-1.2c1.4-4.8-.2-8-5.5-10.9c-4.7-2.6-14-4.1-18.1-3.1zm83.6 2.4c-1.1 2.3-1.9 1.8 11.2 7.8c15.3 7 13.8 6.6 15 4.1l1-2-3.8-1.7c-2.1-1-7.9-3.6-12.9-5.9c-10.7-4.9-9.5-4.6-10.6-2.3zm-88.2 8.2c-4.5 .9-5.1 1.7-7 9c-1.3 5-1.1 6.2 1.8 8.1c1.1 .8 1.2 .9 .5 2.3c-1.8 3.7-1.8 3.6 3.2 4c6.9 .5 14.7 2.8 18.2 5.2c1.9 1.3 1.9 1.4 2.3-2.2l.4-3.1 2.3-.4c2.9-.4 3.5-1.3 5-7.1c1.4-5.4 1.2-6.2-2-9.1c-6-5.4-16.9-8.4-24.8-6.8zm116.9 5.7c-.4 .8-.8 1.6-1.2 2.4c-.1 .2 .5 .7 1.4 1.2l1.6 .8 1.4-2.4c.7-1.3 1.4-2.5 1.4-2.6c0-.1-3.1-1.3-3.4-1.3c0 0-.5 .9-1.1 2zm5.9 1.6c-1.5 3-1.5 3.6-.1 4.3c1.8 .8 1.7 .9 2.9-1.6c1.3-2.7 1.4-2.4-.5-3.3c-1.5-.8-1.6-.8-2.3 .6zm4.5 3.4l-1.1 2.2 1.3 .7c1.8 1 1.9 .9 2.9-1.2c1.1-2.3 1.2-3.2 .1-3.6c-1.6-.6-2.1-.3-3.3 1.9zM126.2 437.5c-3.8 .9-6.1 2.9-6.1 5.3c0 .2 1.2-.1 2.8-.6c8.5-2.9 23.2 .6 29.7 7.1c3 3 3.4 2.9 2.9-.7c-.9-6.3-19.8-13.4-29.3-11.1zm7.3 8.3c-.5 1.7-1.1 3.7-1.3 4.6c-1 3.1 .6 4.5 4.9 4.5l2.3 0 1.2-4.6c.6-2.5 1.2-4.9 1.2-5.2c0-.4-5.8-2.4-7.1-2.4c-.2 0-.7 1.4-1.1 3zM121 444.4c-4.3 3.4 1.1 9.5 11.2 12.9c8.8 2.9 22.3 1.4 22.3-2.5c0-1.9-2-4.7-3.1-4.3c-.5 .2-2.8 .5-5.1 .6l-4.2 .2-.6 2.2c-1 3.4-1.6 3.8-4.5 3.5c-1.4-.2-3.5-.8-4.7-1.4l-2.2-1.1 .4-3.3 .4-3.3-1.9-.7c-1.1-.4-2.7-1.4-3.7-2.2c-2.1-1.8-2.4-1.9-4.2-.5z"/></svg></span> DB Communications</div>
+                        <!--!Font Awesome Pro 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.-->
+                        <div class="bg-blue-transparent simple"><p> In today's world technology keeps our life secure and connected. We provide solutions that will help your business, home, and family stay connected and secure. Our company is family based, and its members have provided services for businesses for over 30 years. We provide you with equiptment and solutions to keep you connected whether at home or away. Additionally, we offer free quotes and estimates, competitive pricing, and friendly, reliable service. We offer Telecommunication, Data, Low voltage, and Surveillance Solutions for commercial, small businesses, and more! </p></div>
+                    </div>
+                </div>
+            </div>
+        
+            <section class="work-section section" id="section-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="item col-md-4">
+                            <div class="tm-work-item-inner">
+                                <div class="icn"><i class="fad fa-2x fa-camera-cctv"></i></div>
+                                <h3>.01 Security</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatum sapiente, ipsa, eaque earum eveniet enim aliquam veritatis.</p>
+                            </div>                        
+                        </div>
+                        <div class="item col-md-4 one">
+                            <div class="tm-work-item-inner">
+                                <div class="icn"><i class="fad fa-2x fa-speaker"></i></div>
+                                <h3>.02 Speakers</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, dolor necessitatibus asperiores impedit numquam aut qui, ad quas libero pariatur.</p>
+                            </div>
+                        </div>
+                        <div class="item col-md-4 two">
+                            <div class="tm-work-item-inner">
+                                <div class="icn"><i class="fad fa-2x fa-network-wired"></i></div>
+                                <h3>.03 Data</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id delectus voluptas reiciendis perferendis consectetur quae ab sed laudantium exercitationem, unde tenetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h2>Our Work</h2>
+                        <p class="workp">We work with multiple 500 Fortune Companies!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery-section section parallax-window" data-parallax="scroll" data-image-src="img/data-center-structured-cabling.jpg" id="section-3">
+                <div class="container">
+                    <div class="title text-right">
+                        <h2 class="fortune">Fortune 500 Companies</h2>
+                    </div>
+                    <div class="mx-auto gallery-slider">
+                        <figure class="effect-julia item">
+                            <img src="img/11.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>Local Public Eatery Dallas, TX</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/12.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>iRobot</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/web1.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>iRobot</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/web2.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>iRobot</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/web3.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>iRobot</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/web4.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>iRobot</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/web5.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>iRobot</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/web6.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>DHL</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/web7.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>Walmart</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/web8.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>DHL</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/web9.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>DHL</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/web10.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>DHL</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/web11.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>Walmart</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="effect-julia item">
+                            <img src="img/web12.jpg" alt="Image">
+                            <figcaption>
+                                <div>
+                                    <p>DHL</p>
+                                </div>
+                                <a href="#section-4">View more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section section" id="section-4">
+                <div class="container">
+                    <div class="title">
+                        <h3>Contact Us</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 mb-4 contact-form">
+                            <div class="form tm-contact-item-inner">
+                                <form action="mailto:nbryant@dbcoms.com" method="POST" enctype="text/plain">
+                                    <div class="form-group">
+                                        <input name="name" type="text" class="form-control" placeholder="Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="email" type="text" class="form-control" placeholder="Email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" class="textarea form-control" placeholder="Message" required></textarea>
+                                    </div>
+                                    <div class="form-group text-right">
+                                        <input type="submit" class="btn btn-primary" value="Send">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-4 contact-details">
+                            <div class="tm-contact-item-inner-2">
+                                <p>Contact us now for a quick quote or questions. We can't wait to hear from you!</p>
+                                <ul class="font-weight-light">
+                                    <li>
+                                        <span class="icn"><i class="fas fa-mobile-alt"></i></span>
+                                        <span class="lbl">Tel:</span> <a href="#">(915) 314-1284</a>
+                                    </li>
+                                    <li>
+                                        <span class="icn"><i class="fas fa-at"></i></span>
+                                        <span class="lbl">Email:</span> <a href="#">nbryant@dbcoms.com</a>
+                                    </li>
+                                    <li>
+                                        <span class="icn"><i class="fas fa-globe-asia"></i></span>
+                                        <span class="lbl">URL:</span> <a href="www.dbcoms.com" target="_blank">www.dbcoms.com</a>
+                                    </li>
+                                </ul>
+                            </div>                        
+                        </div>
+                    </div>                
+                </div>
+                <footer class="footer container container-2">
+                    <div class="row"> 
+                        <p class="col-sm-7">Copyright 2024 DB Communications</p>
+                        <p class="col-sm-5 text-right design">Design: <a rel="nofollow" href="https://github.com/MerakiFSPro" target="_blank">Meraki FS Pro</a></p>
+                    </div>
+                </footer>
+            </section>
+        </main>
     </div>
-    <script src="jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/template-script.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/828948edb8.js" crossorigin="anonymous"></script> -->
 </body>
 </html>
