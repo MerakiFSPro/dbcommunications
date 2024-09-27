@@ -683,8 +683,10 @@ textarea.form-control {
 }
 
 @media (max-width: 991px) {
-  .banner-section .simple p { font-size: 20px; }
+  .banner-section .simple p { font-size: 17px; }
 }
+
+/* Change layout of email and phone number in form */
 
 @media (max-width: 575px) {
   .banner-section .simple p { font-size: 18px; }
@@ -1042,6 +1044,7 @@ figure.effect-julia:hover p {
   display: inline-block;
   max-width: 55px;
   width: 100%;
+  font-size: small;
 }
 
 .contact-section .contact-details ul li a {
@@ -1081,11 +1084,13 @@ figure.effect-julia:hover p {
     height: auto;
     min-height: 100vh;
     padding-top: 50px;
+    /* font-size: small; */
   }
 
   .contact-form,
   .contact-details {
     width: 50%;
+    /* font-size: small; */
   }
 }
 
@@ -1104,6 +1109,7 @@ figure.effect-julia:hover p {
   .footer {
     left: 0;
     padding-top: 30px;
+    font-size: small;
   }
 }
 
@@ -1124,7 +1130,7 @@ figure.effect-julia:hover p {
 }
 
 @media (max-width: 620px) {
-  .contact-form, .contact-details { width: 100%; }
+  .contact-form, .contact-details { width: 100%; font-size: small;}
 
   .contact-details { margin-bottom: 50px!important; }
 }
