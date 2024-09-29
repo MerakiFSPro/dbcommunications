@@ -1130,7 +1130,7 @@ figure.effect-julia:hover p {
 }
 
 @media (max-width: 620px) {
-  .contact-form, .contact-details { width: 100%; font-size: small;}
+  .contact-form, .contact-details { width: 100%; }
 
   .contact-details { margin-bottom: 50px!important; }
 }
