@@ -1126,7 +1126,7 @@ figure.effect-julia:hover p {
   }
 
   .banner-section { padding-top: 0; }
-  .contact-section { padding-bottom: 0; }
+  .contact-section { padding-bottom: 100px; }
 }
 
 @media (max-width: 620px) {
