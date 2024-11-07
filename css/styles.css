@@ -679,17 +679,17 @@ textarea.form-control {
 
 .banner-section .simple p {
   margin-bottom: 0;
-  font-size: 22px;
+  font-size: 15px;
 }
 
 @media (max-width: 991px) {
-  .banner-section .simple p { font-size: 17px; }
+  .banner-section .simple p { font-size: 16px; }
 }
 
 /* Change layout of email and phone number in form */
 
 @media (max-width: 575px) {
-  .banner-section .simple p { font-size: 18px; }
+  .banner-section .simple p { font-size: 16px; }
 }
 
 /* >>> Work Side <<< */
